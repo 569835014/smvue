@@ -1,80 +1,48 @@
 # Button 按钮
 ----
 ### 基础用法
-使用```type```、```plain```和```round```属性来定义 Button 的样式。
+使用```type```属性来定义 Button 的样式。
 
 <div class="demo-block">
-  <div>
     <sm-button>默认按钮</sm-button>
     <sm-button type="basic">basic</sm-button>
     <sm-button type="primary">primary</sm-button>
     <sm-button type="secondary">secondary</sm-button>
     <sm-button type="positive">position</sm-button>
-    <sm-button type="negative">position</sm-button>
-  </div>
-  <div class="m-10">
- 
-  </div>
-  <div class="m-10">
-  
-  </div>
+    <sm-button type="negative">negative</sm-button>
 </div>
 
 ::: demo
 ```html
-
-<div>
   <sm-button>默认按钮</sm-button>
   <sm-button type="basic">basic</sm-button>
   <sm-button type="primary">默认按钮</sm-button>
-   <sm-button type="secondary">primary</sm-button>
-   <sm-button type="secondary">secondary</sm-button>
-   <sm-button type="positive">position</sm-button>
-   <sm-button type="negative">position</sm-button>
-</div>
-<div>
- 
-</div>
-<div>
- 
-</div>
-
+  <sm-button type="secondary">primary</sm-button>
+  <sm-button type="secondary">secondary</sm-button>
+  <sm-button type="positive">position</sm-button>
+  <sm-button type="negative">negative</sm-button>
 ```
 :::
 
 ### 禁用状态
 
-按钮不可用状态。
+```disabled```设置按钮不可用状态。
 
 <div class="demo-block">
-  <div>
     <sm-button disabled>默认按钮</sm-button>
     <sm-button type="primary" disabled>primary</sm-button>
     <sm-button type="secondary" disabled>secondary</sm-button>
     <sm-button type="positive" disabled>position</sm-button>
     <sm-button type="negative" disabled>negative</sm-button>
-  
-  </div>
-  <div class="m-10">
-  
-  </div>
 </div>
 
 ::: demo
 ```html
-
-<div>
     <sm-button disabled>默认按钮</sm-button>
-    
     <sm-button type="primary" disabled>primary</sm-button>
     <sm-button type="secondary" disabled>secondary</sm-button>
     <sm-button type="positive" disabled>position</sm-button>
-    <sm-button type="negative" disabled>negative</sm-button>
-</div>
-<div class="m-10">
- 
-</div>
-  
+    <sm-button type="negative" disabled>negative</sm-button> 
 ```
 :::
 
