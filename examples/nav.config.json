@@ -47,6 +47,11 @@
           "path": "/button"
         },
         {
+          "desc": "Divider 分割线",
+          "name": "divider",
+          "path": "/divider"
+        },
+        {
           "desc": "Tag 标签",
           "name": "tag",
           "path": "/tag"

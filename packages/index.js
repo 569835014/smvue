@@ -3,6 +3,7 @@
  * Date: 17/11/9
  */
 import SMButton from './button/index.js';
+import SMDivider from './divider/index.js';
 import WRow from './row/index'
 import WCol from './col/index'
 import WTag from './tag/index'
@@ -15,6 +16,7 @@ import Skeleton from './skeleton/index'
 import './semantic.css'
 const components = [
   SMButton,
+  SMDivider,
   WRow,
   WCol,
   WTag,
