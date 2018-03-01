@@ -32,7 +32,7 @@
         type: Boolean,
         default: false
       },
-      // 分割线可以清除它上方的内容
+      // 分割线可以清除它上方的浮动
       clearing: {
         type: Boolean,
         default: false

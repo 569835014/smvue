@@ -30,7 +30,8 @@
 | 参数      | 说明    | 类型      | 可选值       | 默认值   |
 |---------- |-------- |---------- |-------------  |-------- |
 | direction     | 分割线的方向   | string  |   horizontal,vertical            |    —     |
-| type     | 类型   | string    |   primary,success,warning,danger,info |     —    |
-| plain     | 是否朴素按钮   | Boolean    | — | false   |
-| disabled  | 是否禁用状态    | boolean   | —   | false   |
-| icon  | 图标，已有的图标库中的图标名 | string   |  —  |  —  |
+| text     | 内容   | string    |   — |     —    |
+| fitted     | divider的上面或下面可以没有任何空间   | Boolean    | — | false   |
+| hide  | 隐藏的分隔线    | Boolean   | —   | false   |
+| icon  | 图标，已有的图标库中的图标名 | Boolean   |  —  |  false  |
+| clearing  | 分割线可以清除它上方的浮动 | Boolean   |  —  |  false |
