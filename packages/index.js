@@ -4,6 +4,7 @@
  */
 import SMButton from './button/index.js';
 import SMDivider from './divider/index.js';
+import SMInput from './input/index.js';
 import WRow from './row/index'
 import WCol from './col/index'
 import WTag from './tag/index'
@@ -17,6 +18,7 @@ import './semantic.css'
 const components = [
   SMButton,
   SMDivider,
+  SMInput,
   WRow,
   WCol,
   WTag,
@@ -40,6 +42,8 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   install,
   SMButton,
+  SMInput,
+  SMDivider,
   WRow,
   WCol,
   WTag,
