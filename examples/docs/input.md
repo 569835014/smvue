@@ -1,40 +1,78 @@
 
 
-# Divider 按钮
+# Input 按钮
 ----
 ### 基础用法
 <div class="demo-block">
-  <div>
-     <sm-input :otherStyle="['error']"></sm-input>
-      <sm-input  v-model.number='a'></sm-input>
-  </div>
-  <div>
-     <sm-input placeholder='输入框 '></sm-input>
-  </div>
-  <div>
-     <sm-input placeholder='search' icon='search' float='left'></sm-input>
-  </div>
-  <div>
-     <sm-input placeholder='search' icon='search' float='right'></sm-input>
-  </div>
-  <div>
-    <sm-input disabled></sm-input>
-  </div>
+  <sm-input placeholder='基本用法'></sm-input>
+  <sm-input v-model='val' placeholder='双向绑定'></sm-input>
 </div>
 <script>
  export default {
     data(){
        return {
-          a:''
+          val:''
        }
-    },
-    methods: {
-      hello() {
-        alert('Hello World!');
-      }
     }
   }
 </script>
+
+::: demo
+```html
+   <sm-input placeholder='基本用法'></sm-input>
+   <sm-input v-model='val' placeholder='双向绑定'></sm-input>
+   <script>
+    export default {
+       data(){
+          return {
+             val:''
+          }
+       }
+     }
+   </script>
+```
+:::
+
+### 禁用状态和高亮状态
+```status```属性可以给输入框添加图标，
+<div class="demo-block">
+    <sm-input placeholder='禁用状态' status='disabled'></sm-input>
+    <sm-input placeholder='高亮状态' status='focus'></sm-input>
+    <sm-input placeholder='错误状态' status='error'></sm-input>
+</div>
+
+::: demo
+```html
+ <sm-input placeholder='禁用状态' status='disabled'></sm-input>
+ <sm-input placeholder='高亮状态' status='focus'></sm-input>
+ <sm-input placeholder='高亮状态' status='error'></sm-input>
+```
+:::
+
+### 输入框与图标
+```icon```属性可以给输入框添加图标，```float```可以控制图标的方向，默认为右方
+<div class="demo-block">
+  <sm-input placeholder='图标用法' icon='search'></sm-input>
+  <sm-input placeholder='左边图标' icon='search' float='left'></sm-input>
+</div>
+
+::: demo
+```html
+  <sm-input placeholder='图标用法' icon='search'></sm-input>
+  <sm-input placeholder='左边图标' icon='search' float='left'></sm-input>
+```
+:::
+### Model
+```model```可以调整输入框的模式，
+<div class="demo-block">
+  <sm-input placeholder='透明输入法' model='transparent' icon='search' float='left'></sm-input>
+</div>
+
+::: demo
+```html
+ <sm-input placeholder='透明输入法' model='transparent' icon='search' float='left'></sm-input>
+```
+:::
 
 ### Attributes
 | 参数      | 说明    | 类型      | 可选值       | 默认值   |
